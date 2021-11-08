@@ -1,0 +1,45 @@
+:root {
+    --yellow: #F9B73B;
+    --orange: #F47500;
+    --orange-hover: #CC6300;
+    --red: #A52416;
+    --green: #139C13;
+}
+
+html,
+body {
+    font-family: 'Alegreya Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    font-weight: 500;
+}
+
+a.cta,
+button.cta {
+    display: inline-block;
+    background-color: var(--orange);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    min-width: 200px;
+    clip-path: polygon(0 7%, 100% 0%, 95% 100%, 2.5% 95%);
+    transition: background-color 0.12s ease-in;
+}
+
+a.cta:hover,
+button.cta:hover {
+    background-color: var(--orange-hover);
+}
+
+.card {
+    clip-path: polygon(0 8px, 100% 0%, calc(100% - 10px) 100%, 10px calc(100% - 8px));
+}
+
+.header {
+    clip-path: polygon(0 5px, 100% 0%, calc(100% - 4px) 100%, 5px calc(100% - 5px));
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
