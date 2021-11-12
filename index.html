@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body style="background-color: #112818;">
-    <header class="header fixed top-4 left-4 right-4 bg-white">
-        <nav class="flex flex-row header-nav items-center px-6">
+    <header class="header fixed top-4 left-4 right-4 bg-yellow z-50">
+        <nav class="flex flex-row header-nav items-center px-6 py-1">
             <a class="py-2 pr-4 inline-block" href="/">
                 <img src="./img/team-11-logo-black.png" alt="Team 11 Logo" class="h-12">
             </a>
             <ul class="inline-block">
-                <li class="inline-block"><a class="block p-4 nav-link" href="/">Home</a></li>
-                <li class="inline-block"><a class="block p-4 nav-link" href="#about">About</a></li>
-                <li class="inline-block"><a class="block p-4 nav-link" href="#characters">Characters</a></li>
-                <li class="inline-block"><a class="nav-link" href="#weapons">Weapons</a></li>
+                <li class="inline-block"><a class="block p-4 nav-link uppercase" href="/">Home</a></li>
+                <li class="inline-block"><a class="block p-4 nav-link uppercase" href="#about">About</a></li>
+                <li class="inline-block"><a class="block p-4 nav-link uppercase" href="#characters">Characters</a></li>
+                <li class="inline-block"><a class="block p-4 nav-link uppercase" href="#weapons">Weapons</a></li>
             </ul>
             <ul class="inline-block ml-auto">
-                <li class="inline-block"><a class="nav-link" href="">Login</a></li>
-                <li class="inline-block"><a class="nav-button button-primary" href="">Create Account</a></li>
+                <li class="inline-block"><a class="block nav-link p-4 uppercase" href="#!">Login</a></li>
+                <li class="inline-block"><a class="py-4 px-6 nav-button button-primary uppercase text-white" href="#!">Create Account</a></li>
             </ul>
         </nav>
     </header>
@@ -34,32 +34,35 @@
                     <div class="logo-wrapper">
                         <img src="./img/king-of-the-jungle-2.png" alt="King of the Jungle logo">
                     </div>
-                    <div class="coming-soon">
-                        <h2>COMING SOON</h2>
+                    <div class="coming-soon mt-5">
+                        <h2 class="text-6xl text-white font-bold">COMING SOON</h2>
                     </div>
-                    <div class="cta-wrapper">
+                    <div class="cta-wrapper mt-8">
                         <a href="#" class="cta">Learn More</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="features">
-            <div class="container max-w-3xl mx-auto">
+        <section class="features shift-up">
+            <div class="container max-w-5xl mx-auto xs:px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12">
                 <div class="cards-list">
-                    <div class="card card-1 p-12 bg-yellow-400">
-                        <h2 class="text-5xl text-black font-bold card-heading">The Story</h2>
+                    <div class="card card-1 pt-16 pb-12 px-12 bg-yellow-400">
+                        <h2 class="text-7xl text-black font-bold card-heading uppercase">The Story</h2>
+                        <h4 class="text-3xl mt-2 uppercase mb-4">The Story Begins When...</h4>
                         <div class="card-body">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloremque, optio expedita odit provident blanditiis tempora molestiae officiis illum neque commodi! Hic, temporibus ex. Corrupti ut blanditiis illo suscipit nam.</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi nobis voluptate, tenetur placeat iste! Ipsum quaerat minus cupiditate repellat, doloribus aut architecto sed! Repudiandae quae vel sed quam voluptas!</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maiores eligendi optio sit consequuntur. Rerum blanditiis ratione maiores fugiat, suscipit ullam, ab, repellendus officiis sit expedita impedit nobis harum temporibus?</p>
+                            <p class="mb-3">It’s the year 500BC and all creatures on planet Earth face extinction. Thousands of animal’s board Noah’s Ark seeking refuge from their imminent doom. Months later, as the flood begins to subside, the Ark crashes into a remote island. EXPLOSION! </p>
+                            <p class="mb-3">The animals wander out of the Ark to find themselves on a tropical island covered in ancient artifacts. These ancient artifacts increase the intelligence of these animals, and a new, advanced species of animals are born. Within the next 100 years, these animals create an advanced civilisation, hosting sophisticated architecture and revolutionary weaponry. </p>
+                            <p>Now the animals seek to elect a new king, but each faction wishes for the king to be one of their own. Countless disputes later, chaos breaks out. Soon after a war is declared… a war for the next KING OF THE JUNGLE. </p>
                         </div>
-                    </div>
-                    <div class="card card-2">
-                        <h2 class="card-heading">Characters</h2>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container flex items-center justify-center max-w-5xl mx-auto xs:px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12 py-8">
+            <img src="./img/team-11-logo.png" height="64px" width="64px" alt="">
+        </div>
+    </footer>
 </body>
 </html>

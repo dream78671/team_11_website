@@ -3,6 +3,7 @@
     --orange: #F47500;
     --orange-hover: #CC6300;
     --red: #A52416;
+    --red-hover: hsl(6, 76%, 32%);
     --green: #139C13;
 }
 
@@ -40,6 +41,25 @@ button.cta:hover {
     clip-path: polygon(0 5px, 100% 0%, calc(100% - 4px) 100%, 5px calc(100% - 5px));
 }
 
-.nav-link {
-    text-transform: uppercase;
+.nav-button.button-primary {
+    background-color: var(--red);
+    clip-path: polygon(0 3px, 100% 0%, calc(100% - 3px) 100%, 3px calc(100% - 3px));
+}
+
+.nav-button.button-primary:hover {
+    background-color: var(--red-hover);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.coming-soon h2 {
+    text-shadow: 0 2px 2px var(--red), 
+                 0 3px 3px var(--red),
+                 0 4px 4px var(--red);
+}
+
+.shift-up {
+    margin-top: -120px;
 }
