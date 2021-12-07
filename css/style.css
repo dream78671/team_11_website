@@ -13,6 +13,24 @@ body {
     font-weight: 500;
 }
 
+/* Navigation bar */
+.header {
+    clip-path: polygon(0 5px, 100% 0%, calc(100% - 4px) 100%, 5px calc(100% - 5px));
+}
+
+.nav-button.button-primary {
+    background-color: var(--red);
+    clip-path: polygon(0 3px, 100% 0%, calc(100% - 3px) 100%, 3px calc(100% - 3px));
+}
+
+.nav-button.button-primary:hover {
+    background-color: var(--red-hover);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
 a.cta,
 button.cta {
     display: inline-block;
@@ -35,23 +53,6 @@ button.cta:hover {
 
 .card {
     clip-path: polygon(0 8px, 100% 0%, calc(100% - 10px) 100%, 10px calc(100% - 8px));
-}
-
-.header {
-    clip-path: polygon(0 5px, 100% 0%, calc(100% - 4px) 100%, 5px calc(100% - 5px));
-}
-
-.nav-button.button-primary {
-    background-color: var(--red);
-    clip-path: polygon(0 3px, 100% 0%, calc(100% - 3px) 100%, 3px calc(100% - 3px));
-}
-
-.nav-button.button-primary:hover {
-    background-color: var(--red-hover);
-}
-
-.bg-yellow {
-    background-color: var(--yellow);
 }
 
 .coming-soon h2 {
