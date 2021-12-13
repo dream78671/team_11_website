@@ -90,10 +90,13 @@ button.cta.red-light:hover {
 
 .color-green {
     color: var(--green);
+    
 }
 
 .color-orange {
     color: var(--orange);
+    background-color: var(--orange);
+
 }
 
 .color-yellow {
