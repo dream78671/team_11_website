@@ -79,6 +79,10 @@ button.cta.red-light:hover {
 .bg-green {
     background-color: var(--green);
 }
+.bg-orange {
+    background-color: var(--orange);
+}
+
 
 .bg-red {
     background-color: var(--red);
