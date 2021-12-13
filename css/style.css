@@ -66,6 +66,10 @@ button.cta.red-light:hover {
     background-color: var(--yellow);
 }
 
+.characters-card {
+    background-color: var(--orange);
+}
+
 .coming-soon h2 {
     text-shadow: 0 2px 2px var(--red), 
                  0 3px 3px var(--red),
