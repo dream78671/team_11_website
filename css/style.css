@@ -15,6 +15,10 @@ body {
     font-weight: 500;
 }
 
+body {
+    counter-set: count;
+}
+
 a.cta,
 button.cta {
     display: inline-block;
@@ -45,8 +49,34 @@ button.cta.red-light:hover {
     background-color: var(--red-hover);
 }
 
-.card {
+.card,
+.card-1 {
     clip-path: polygon(0 8px, 100% 0%, calc(100% - 10px) 100%, 10px calc(100% - 8px));
+}
+
+.card-2 {
+    clip-path: polygon(0 0, 100% 8px, calc(100% - 10px) calc(100% - 8px), 10px 100%);
+}
+
+.card {
+    counter-increment: count;
+    position: relative;
+}
+
+.card::before {
+    content: '0'counter(count);
+    display: block;
+    font-size: 16rem;
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+    font-weight: 700;
+    right: 64px;
+    top: -16px;
+    color: #fff;
+    opacity: 0.35;
+    z-index: -1;
 }
 
 .header {
@@ -79,10 +109,10 @@ button.cta.red-light:hover {
 .bg-green {
     background-color: var(--green);
 }
+
 .bg-orange {
     background-color: var(--orange);
 }
-
 
 .bg-red {
     background-color: var(--red);
@@ -130,4 +160,17 @@ button.cta.red-light:hover {
 .post-img {
     padding-bottom: 100%;
     clip-path: polygon(0% 0%, 100% 10px, 100% 100%, 0 100%);
+}
+
+.cards-list .weapon-card {
+    height: 360px;
+    margin-right: 20px;
+}
+
+.cards-list .weapon-card:last-child {
+    margin-right: 0;
+}
+
+.card .coming-soon {
+    user-select: none;
 }
