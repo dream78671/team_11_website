@@ -94,7 +94,6 @@ button.cta.red-light:hover {
 }
 
 .color-orange {
-    color: var(--orange);
     background-color: var(--orange);
 
 }
