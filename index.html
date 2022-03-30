@@ -7,7 +7,7 @@
     <title>King of the Jungle Game - Team 11</title>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/tailwindcss.min.css">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body style="background-color: #112818;" id="home">
     <header class="header fixed top-4 left-4 right-4 bg-yellow z-50">
@@ -21,10 +21,11 @@
                 <li class="inline-block"><a class="block p-4 nav-link uppercase" href="#story" data-scroll>Story</a></li>
                 <li class="inline-block"><a class="block p-4 nav-link uppercase" href="#characters" data-scroll>Characters</a></li>
                 <li class="inline-block"><a class="block p-4 nav-link uppercase" href="#weapons" data-scroll>Weapons</a></li>
+                <li class="inline-block"><a class="block p-4 nav-link uppercase" href="#maps" data-scroll>Maps</a></li>
                 <li class="inline-block"><a class="block p-4 nav-link uppercase" href="/blog">Blog</a></li>
             </ul>
             <ul class="inline-block ml-auto">
-                <li class="inline-block"><a class="py-4 px-6 nav-button button-primary uppercase text-white download-btn" href="/game/v1/kingofthejungle-mac.zip" download>Download</a></li>
+                <li class="inline-block"><a class="py-4 px-6 nav-button button-primary uppercase text-white download-btn" href="/game/v2/kingofthejungle-mac.zip" download>Download</a></li>
             </ul>
         </nav>
     </header>
@@ -39,14 +40,17 @@
                         <h2 class="text-5xl text-white font-bold text-center uppercase">Who is the new king of the jungle</h2>
                     </div>
                     <div class="cta-wrapper mt-10">
-                        <a href="/game/v1/kingofthejungle-mac.zip" class="cta download-btn" id="main-download-btn" download>Download Now</a>
+                        <a href="/game/v2/kingofthejungle-mac.zip" class="cta download-btn" id="main-download-btn" download>Download Now</a>
+                    </div>
+                    <div class="cta-wrapper mt-2">
+                        <a href="/game/v2/kingofthejungle-windows.zip" class="cta-secondary alt-download-btn" id="alt-download-btn" download>Download for Windows</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="features shift-up">
+        <div class="features shift-up">
             <div class="container max-w-7xl mx-auto xs:px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12">
-                <div class="card card-1 pt-16 pb-12 px-12 bg-yellow-400" id="story">
+                <section class="card card-1 pt-16 pb-12 px-12 bg-yellow-400" id="story">
                     <h2 class="text-7xl text-black font-bold card-heading uppercase">The Story</h2>
                     <h4 class="text-3xl mt-2 uppercase mb-4">The Story Begins When...</h4>
                     <div class="card-body">
@@ -54,53 +58,168 @@
                         <p class="mb-3 text-2xl">The animals wander out of the Ark to find themselves on a tropical island covered in ancient artifacts. These ancient artifacts increase the intelligence of these animals, and a new, advanced species of animals are born. Within the next 100 years, these animals create an advanced civilisation, hosting sophisticated architecture and revolutionary weaponry. </p>
                         <p class="text-2xl">Now the animals seek to elect a new king, but each faction wishes for the king to be one of their own. Countless disputes later, chaos breaks out. Soon after a war is declared… a war for the next KING OF THE JUNGLE. </p>
                     </div>
-                </div>
-                <div class="card card-2 pt-16 pb-12 px-12 bg-orange mt-16" id="characters">
+                </section>
+                <section class="card card-2 pt-16 pb-12 px-12 bg-orange mt-16" id="characters">
                     <h2 class="text-7xl text-black font-bold card-heading uppercase mb-7">Characters</h2>
                     <div class="card-body">
                         <div class="flex flex-row cards-list">
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center bg-yellow-400">
-                                <img src="/img/characters/character-1.png" alt="" class="block w-60">
+                            <!-- Dragon -->
+                            <div class="character-card bg-yellow-400 flex-1 inline-flex items-center flex-col justify-center">
+                                <div class="card-img">
+                                    <img src="/img/characters/dragon.png" alt="" class="block w-60">
+                                </div>
+                                <div class="flex flex-col text-center card-content self-stretch">
+                                    <h2 class="card-title">Dragon</h2>
+                                </div>
                             </div>
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center bg-yellow-400">
-                                <img src="/img/characters/character-2.png" alt="" class="block w-60">
+                            <!-- Rhino -->
+                            <div class="character-card bg-yellow-400 flex-1 inline-flex items-center flex-col justify-center">
+                                <div class="card-img">
+                                    <img src="/img/characters/rhino.png" alt="" class="block w-60">
+                                </div>
+                                <div class="flex flex-col text-center card-content self-stretch">
+                                    <h2 class="card-title">Rhino</h2>
+                                </div>
                             </div>
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center">
-                                <img src="/img/team-11-logo-black.png" alt="" class="block w-20 object-cover opacity-30 object-center">
-                                <p class="mt-3 text-center text-2xl opacity-30 coming-soon">Coming Soon</p>
-                            </div>
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center">
-                                <img src="/img/team-11-logo-black.png" alt="" class="block w-20 object-cover opacity-30 object-center">
-                                <p class="mt-3 text-center text-2xl opacity-30 coming-soon">Coming Soon</p>
+                            <!-- Lion -->
+                            <div class="character-card bg-yellow-400 flex-1 inline-flex items-center flex-col justify-center">
+                                <div class="card-img">
+                                    <img src="/img/characters/lion.png" alt="" class="block w-60">
+                                </div>
+                                <div class="flex flex-col text-center card-content self-stretch">
+                                    <h2 class="card-title">Lion</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card card-1 pt-16 pb-12 px-12 bg-red mt-16" id="weapons">
+                </section>
+                <section class="card card-1 pt-16 pb-12 px-12 bg-red mt-16" id="weapons">
                     <h2 class="text-7xl text-white font-bold card-heading uppercase mb-7">Weapons</h2>
                     <div class="card-body">
-                        <div class="flex flex-row cards-list">
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center bg-yellow-400">
-                                <img src="/img/weapons/laser_red.png" alt="" class="block w-52">
+                        <div class="flex flex-row">
+                            <div class="weapon-card bg-white flex-1 inline-flex items-stretch flex-col justify-stretch bg-yellow-400">
+                                <div class="card-img">
+                                    <img src="/img/weapons/rocket.png" alt="Rocket" class="block">
+                                </div>
+                                <div class="flex flex-col card-content">
+                                    <h2 class="card-title flex-1">SMAW Rocket Launcher</h2>
+                                    <div class="more-details">
+                                        <div class="flex flex-row justify-between">
+                                            <div class="weapon-power weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Damage</h6>
+                                                <p class="weapon-v-block">50</p>
+                                            </div>
+                                            <div class="weapon-range weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Range</h6>
+                                                <p class="weapon-v-block">Moderate</p>
+                                            </div>
+                                        </div>
+                                        <div class="power-block"><div class="power-fill power-50"></div></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center bg-yellow-400">
-                                <img src="/img/weapons/pistol.png" alt="" class="block w-52">
+                            <div class="weapon-card bg-white flex-1 inline-flex items-stretch flex-col justify-stretch bg-yellow-400">
+                                <div class="card-img">
+                                    <img src="/img/weapons/sniper.png" alt="Sniper" class="block">
+                                </div>
+                                <div class="flex flex-col card-content">
+                                    <h2 class="card-title flex-1">M98B Sniper</h2>
+                                    <div class="more-details">
+                                        <div class="flex flex-row justify-between">
+                                            <div class="weapon-power weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Damage</h6>
+                                                <p class="weapon-v-block">50</p>
+                                            </div>
+                                            <div class="weapon-range weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Range</h6>
+                                                <p class="weapon-v-block">Long</p>
+                                            </div>
+                                        </div>
+                                        <div class="power-block"><div class="power-fill power-50"></div></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center bg-yellow-400">
-                                <img src="/img/weapons/shotgun.png" alt="" class="block w-52">
+                            <div class="weapon-card bg-white flex-1 inline-flex items-stretch flex-col justify-stretch bg-yellow-400">
+                                <div class="card-img">
+                                    <img src="/img/weapons/shotgun.png" alt="Shotgun" class="block">
+                                </div>
+                                <div class="flex flex-col card-content">
+                                    <h2 class="card-title flex-1">KSG Shotgun</h2>
+                                    <div class="more-details">
+                                        <div class="flex flex-row justify-between">
+                                            <div class="weapon-power weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Damage</h6>
+                                                <p class="weapon-v-block">70</p>
+                                            </div>
+                                            <div class="weapon-range weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Range</h6>
+                                                <p class="weapon-v-block">Short</p>
+                                            </div>
+                                        </div>
+                                        <div class="power-block"><div class="power-fill power-70"></div></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="weapon-card bg-white flex-1 inline-flex items-center flex-col justify-center bg-yellow-400">
-                                <img src="/img/weapons/sniper.png" alt="" class="block w-52">
+                            <div class="weapon-card bg-white flex-1 inline-flex items-stretch flex-col justify-stretch bg-yellow-400">
+                                <div class="card-img">
+                                    <img src="/img/weapons/pistol.png" alt="Pistol" class="block">
+                                </div>
+                                <div class="flex flex-col card-content">
+                                    <h2 class="card-title flex-1">USP Match Pistol</h2>
+                                    <div class="more-details">
+                                        <div class="flex flex-row justify-between">
+                                            <div class="weapon-power weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Damage</h6>
+                                                <p class="weapon-v-block">25</p>
+                                            </div>
+                                            <div class="weapon-range weapon-kv-block flex-1">
+                                                <h6 class="weapon-k-block">Range</h6>
+                                                <p class="weapon-v-block">Short</p>
+                                            </div>
+                                        </div>
+                                        <div class="power-block"><div class="power-fill power-25"></div></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <section class="card card-2 pt-16 pb-12 px-12 bg-green mt-16 maps-section" id="maps">
+                    <h2 class="text-7xl text-white font-bold card-heading uppercase mb-7">Maps</h2>
+                    <div class="card-body">
+                        <div class="maps-list swiper-container">
+                            <div class="flex flex-row swiper-wrapper">
+                                <div class="swiper-slide map-card bg-white items-stretch flex-col justify-stretch">
+                                    <div class="card-img">
+                                        <img src="./img/maps/map-1.png" alt="Map" class="block object-cover object-center">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide map-card bg-white items-stretch flex-col justify-stretch">
+                                    <div class="card-img">
+                                        <img src="./img/maps/map-2.png" alt="Map" class="block object-cover object-center">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide map-card bg-white items-stretch flex-col justify-stretch">
+                                    <div class="card-img">
+                                        <img src="./img/maps/map-3.png" alt="Map" class="block object-cover object-center">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="slider-nav slider-nav-prev">
+                                <img src="./img/icons/icons8-chevron-left-64.png" alt="">
+                            </button>
+                            <button type="button" class="slider-nav slider-nav-next">
+                                <img src="./img/icons/icons8-chevron-right-64.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="container flex items-center justify-center max-w-5xl mx-auto xs:px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12 py-8">
-            <img src="./img/team-11-logo.png" height="64px" width="64px" alt="">
+            <img src="./img/team-11-logo.png" height="64px" width="64px" alt="Team 11 Logo" class="block">
         </div>
     </footer>
     <!-- Smooth Scroll -->

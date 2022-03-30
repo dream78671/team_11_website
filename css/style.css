@@ -20,18 +20,31 @@ body {
 }
 
 a.cta,
-button.cta {
+button.cta,
+a.cta-secondary,
+button.cta-secondary {
     display: inline-block;
-    background-color: var(--orange);
-    color: #fff;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1rem;
     padding: 1rem 1.5rem;
     text-align: center;
     min-width: 200px;
+}
+
+a.cta,
+button.cta {
+    color: #fff;
+    background-color: var(--orange);
+    background-image: linear-gradient(to bottom, #F47500, #D02E00);
+    border-top: 1px solid #F9B73B;
     clip-path: polygon(0 7%, 100% 0%, 95% 100%, 2.5% 95%);
     transition: background-color 0.12s ease-in;
+}
+
+a.cta-secondary,
+button.cta-secondary {
+    color: #B82800;
 }
 
 a.cta:hover,
@@ -146,8 +159,8 @@ button.cta.red-light:hover {
 
 .hero-home .hero-content,
 .hero-small {
-    padding-top: 104px;
-    padding-bottom: 120px;
+    padding-top: 168px;
+    padding-bottom: 184px;
 }
 
 .hero-small {
@@ -166,15 +179,208 @@ button.cta.red-light:hover {
     clip-path: polygon(0% 0%, 100% 10px, 100% 100%, 0 100%);
 }
 
-.cards-list .weapon-card {
-    height: 360px;
-    margin-right: 20px;
+.weapon-card,
+.character-card {
+    height: auto;
+    margin-right: 24px;
 }
 
-.cards-list .weapon-card:last-child {
+.character-card {
+    padding: 24px;
+}
+
+.weapon-card img,
+.character-card:not(.coming-soon) img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.weapon-card:last-child {
     margin-right: 0;
 }
 
 .card .coming-soon {
     user-select: none;
+}
+
+.character-card {
+    min-height: 320px;
+}
+
+.card .card-img {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.weapon-card .card-img {
+    padding-bottom: 75%;
+}
+
+.character-card .card-img {
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.character-card .card-img::before {
+    content: '';
+    display: block;
+    width: 70%;
+    padding-bottom: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9999px;
+    background-color: #fff;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.card .card-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 24px;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.card .card-content {
+    flex-grow: 1;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 16px, 100% 100%, 0 100%);
+}
+
+.card .card-title {
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    line-height: 1.125;
+    padding: 32px 24px 12px;
+    font-weight: 600;
+}
+
+.weapon-card .more-details {
+    padding: 0 24px 24px;
+}
+
+.weapon-k-block {
+    font-size: 0.875rem;
+    line-height: 1;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    color: #A52416;
+    font-weight: 500;
+}
+
+.weapon-v-block {
+    font-size: 1.25rem;
+    line-height: 1;
+    text-transform: capitalize;
+    color: #222;
+    font-weight: 600;
+}
+
+.power-block {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin-top: 20px;
+    background-color: #F9B73B;
+}
+
+.power-block .power-fill {
+    display: block;
+    height: 100%;
+    background-color: #D02E00;
+}
+
+.power-block .power-fill.power-25 {
+    width: 25%;
+}
+
+.power-block .power-fill.power-50 {
+    width: 50%;
+}
+
+.power-block .power-fill.power-70 {
+    width: 70%;
+}
+
+.power-block .power-fill.power-100 {
+    width: 100%;
+}
+
+.map-card {
+    clip-path: polygon(0 10px, 100% 10px, 100% calc(100% - 16px), 0 calc(100% - 8px));
+}
+
+.map-card .card-img {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 61%;
+}
+
+.map-card .card-img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.maps-list {
+    width: 100%;
+    position: relative;
+}
+
+.maps-list:not(.swiper-initialized) {
+    overflow-x: auto;
+}
+
+.maps-section {
+    overflow: hidden;
+}
+
+.maps-list .slider-nav {
+    display: block;
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    background-color: #F9B73B;
+    z-index: 3;
+}
+
+.maps-list .slider-nav-next {
+    right: 0%;
+    transform: translate(50%, -50%);
+}
+
+.maps-list .slider-nav-prev {
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.maps-list .slider-nav:hover {
+    transition: background-color 0.12s ease;
+    background-color: #F47500;
+}
+
+.maps-list .slider-nav.swiper-button-disabled {
+    display: none;
+}
+
+.maps-list .slider-nav img {
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
 }
