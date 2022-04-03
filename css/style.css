@@ -36,15 +36,23 @@ a.cta,
 button.cta {
     color: #fff;
     background-color: var(--orange);
+    clip-path: polygon(0 7%, 100% 0%, 95% 100%, 2.5% 95%);
     background-image: linear-gradient(to bottom, #F47500, #D02E00);
     border-top: 1px solid #F9B73B;
-    clip-path: polygon(0 7%, 100% 0%, 95% 100%, 2.5% 95%);
-    transition: background-color 0.12s ease-in;
+    transition: transform 0.12s ease, clip-path 0.3s ease, background-color 0.12s ease;
 }
 
 a.cta-secondary,
 button.cta-secondary {
-    color: #B82800;
+    color: var(--red-light);
+}
+
+a.cta-secondary:hover,
+a.cta-secondary:focus,
+button.cta-secondary:hover,
+button.cta-secondary:focus {
+    color: var(--red-light-hover);
+    background-color: var(--yellow);
 }
 
 a.cta:hover,
@@ -57,13 +65,14 @@ button.cta:hover {
 a.cta:focus,
 button.cta:focus {
     transform: scale(1.125);
-    transition: transform 0.12s ease;
+    clip-path: polygon(5% 0, 95% 0%, 100% 95%, 2.5% 100%);
     animation: pulse 1s ease infinite forwards;
 }
 
 a.cta.red-light,
 button.cta.red-light {
     background-color: var(--red);
+    background-image: none !important;
 }
 
 a.cta.red-light:hover,
@@ -117,8 +126,9 @@ button.cta.red-light:hover {
 }
 
 .nav-button.button-primary:focus {
-    transform: scale(1.125);
-    transition: transform 0.12s ease;
+    transform: scale(1.1);
+    transition: transform 0.12s ease, clip-path 0.12s ease;
+    clip-path: polygon(3px 0px, calc(100% - 3px) 3px, 100% calc(100% - 3px), 0 100%);
     animation: changeBg 1s ease infinite forwards;
 }
 
