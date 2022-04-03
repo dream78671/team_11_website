@@ -196,11 +196,6 @@ button.cta.red-light:hover {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), 0% 100%);
 }
 
-.hero-small .hero-content {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .post-img {
     padding-bottom: 100%;
     clip-path: polygon(0% 0%, 100% 10px, 100% 100%, 0 100%);
