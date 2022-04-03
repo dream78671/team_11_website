@@ -49,7 +49,16 @@ button.cta-secondary {
 
 a.cta:hover,
 button.cta:hover {
+    transition: background-image 0.2s ease;
     background-color: var(--orange-hover);
+    background-image: linear-gradient(to bottom, #CC6300, #A52416);
+}
+
+a.cta:focus,
+button.cta:focus {
+    transform: scale(1.125);
+    transition: transform 0.12s ease;
+    animation: pulse 1s ease infinite forwards;
 }
 
 a.cta.red-light,
@@ -97,12 +106,20 @@ button.cta.red-light:hover {
 }
 
 .nav-button.button-primary {
+    display: block;
+    display: flex;
     background-color: var(--red);
     clip-path: polygon(0 3px, 100% 0%, calc(100% - 3px) 100%, 3px calc(100% - 3px));
 }
 
 .nav-button.button-primary:hover {
     background-color: var(--red-hover);
+}
+
+.nav-button.button-primary:focus {
+    transform: scale(1.125);
+    transition: transform 0.12s ease;
+    animation: changeBg 1s ease infinite forwards;
 }
 
 .bg-yellow {
@@ -365,12 +382,23 @@ button.cta.red-light:hover {
     transform: translate(50%, -50%);
 }
 
+.maps-list .slider-nav-next:focus {
+    transition: transform 0.12s ease;
+    transform: translate(50%, -50%) scale(1.2);
+}
+
 .maps-list .slider-nav-prev {
     left: 0%;
     transform: translate(-50%, -50%);
 }
 
-.maps-list .slider-nav:hover {
+.maps-list .slider-nav-prev:focus {
+    transition: transform 0.12s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.maps-list .slider-nav:hover,
+.maps-list .slider-nav:focus {
     transition: background-color 0.12s ease;
     background-color: #F47500;
 }
@@ -383,4 +411,16 @@ button.cta.red-light:hover {
     width: 24px;
     height: 24px;
     pointer-events: none;
+}
+
+@keyframes pulse {
+    to {
+        background-image: linear-gradient(to bottom, #CC6300, #A52416);
+    }
+}
+
+@keyframes changeBg {
+    to {
+        background-color: var(--red-hover);
+    }
 }
